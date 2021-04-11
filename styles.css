@@ -9,6 +9,7 @@ header {
     margin: 0;
     background-color: #24252A;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
@@ -20,6 +21,11 @@ li, a, button, span{
     font-size: 16px;
     color: #edf0d1;
     text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 #logo {
@@ -50,8 +56,8 @@ li, a, button, span{
 button {
     padding: 9px 25px;
     background-color: rgba(0,136,169,1);
-    border: none;
     border-radius: 50px;
+    border: none;
     cursor: pointer;
     transition: all 0.4s ease 0s;
 }
@@ -97,7 +103,9 @@ button:hover {
 
     nav {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 
     .nav__links {
