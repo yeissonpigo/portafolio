@@ -13,6 +13,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 li, a, button, span, .header__title, .header__text{
@@ -28,13 +31,14 @@ li, a, button, span, .header__title, .header__text{
     display: block;
     height: 100vh;
     width: 100%;
+    z-index: -1;
 }
 
 .header__introduction {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-top: 4%;
+    margin-top: 15%;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -42,15 +46,45 @@ li, a, button, span, .header__title, .header__text{
 .header__title {
     color: #A7ABC2;
     font-size: 50px;
+    padding-top: inherit;
     padding-left: 26%;
     padding-bottom: 2%;
-    /* margin: 5% 20%; */
 }
 
 .header__text {
     font-size: 25px;
     text-align: center;
-   /* margin: 12% 8%; */
+}
+
+#header__logo {
+    position: absolute;
+    font-size: 500px;
+    margin-left: 50%;
+    margin-top: 5%;
+    color: #edf0d1;
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+    display: block;
+    cursor: pointer;
+}
+
+#header__logo:hover {
+    color: rgba(0,136,169,1);
+}
+
+#header__logo__active {
+    position: absolute;
+    font-size: 500px;
+    margin-left: 50%;
+    margin-top: 5%;
+    color: #edf0d1;
+    transform: translateX(60%);
+    transition: transform 0.5s ease-in;
+    display: block;
+}
+
+#header__logo__active:hover {
+    color: rgba(0,136,169,1);
 }
 
 nav {

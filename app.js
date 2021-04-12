@@ -19,4 +19,21 @@ const navSlide = () => {
     });
 }
 
+const headerLogoAnimation = () => {
+    const headerLogo = document.querySelector('#header__logo');
+
+    headerLogo.addEventListener('click', () => {
+
+        //toggle logo
+        headerLogo.id = "header__logo__active";
+        style = window.getComputedStyle(headerLogo);
+        flag = style.getPropertyValue('transform');
+
+        //toggle logo after 0.5s to go to the initial position
+        var timer;
+        timer = setTimeout(function(){headerLogo.id = "header__logo";}, 500);
+    });
+}
+
 navSlide();
+headerLogoAnimation();
