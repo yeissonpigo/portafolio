@@ -31,7 +31,7 @@ const headerLogoAnimation = () => {
 
         //toggle logo after 0.5s to go to the initial position
         var timer;
-        timer = setTimeout(function(){headerLogo.id = "header__logo";}, 500);
+        timer = setTimeout(function(){headerLogo.id = "header__logo";}, 850);
     });
 }
 
